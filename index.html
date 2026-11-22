@@ -317,5 +317,20 @@ footer {
    WhatsApp
 </a>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+const SUPABASE_URL = "https://ifpvlmbcaknuzrnaqmgq.supabase.co";
+
+const SUPABASE_KEY = "sb_publishable_tJLYy0qJJ3z4ftk5k0hOBg_lvz6GpG7";
+
+const awDatabase = supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_KEY
+);
+
+console.log("AW Supabase initialized successfully!");
+</script>
+
 </body>
-      </html>
+</html>
